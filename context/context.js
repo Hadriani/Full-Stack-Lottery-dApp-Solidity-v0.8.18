@@ -12,6 +12,7 @@ export const AppProvider = ({ children }) => {
   const [lastWinner, setLastWinner] = useState([])
   const [lotteryId, setLotteryId] = useState()
   const [etherscanUrl, setEtherscanUrl] = useState()
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     updateLottery()
@@ -48,9 +49,10 @@ export const AppProvider = ({ children }) => {
         gasPrice: null,
       })
       updateLottery()
+      alert('You have entered the lottery!')
     } catch (err) {
       console.log(err, 'enter')
-    }
+    } 
   }
 
   const pickWinner = async () => {
@@ -64,6 +66,7 @@ export const AppProvider = ({ children }) => {
       console.log(tx)
       setEtherscanUrl('https://sepolia.etherscan.io/tx/' + tx.transactionHash)
       updateLottery()
+      alert('We have a winner!')
     } catch (err) {
       console.log(err, 'pick Winner')
     }
@@ -75,28 +78,29 @@ export const AppProvider = ({ children }) => {
       typeof window.ethereum !== 'undefined'
     ) {
       try {
-        /* request wallet connection */
+       
         await window.ethereum.request({ method: 'eth_requestAccounts' })
-        /* create web3 instance & set to state */
+        
         const web3 = new Web3(window.ethereum)
-        /* set web3 instance in React state */
+       
         setWeb3(web3)
-        /* get list of accounts */
+    
         const accounts = await web3.eth.getAccounts()
-        /* set account 1 to React state */
+        
         setAddress(accounts[0])
         setLotteryContract(createLotteryContract(web3))
         window.ethereum.on('accountsChanged', async () => {
           const accounts = await web3.eth.getAccounts()
 
-          /* set account 1 to React state */
+          
           setAddress(accounts[0])
         })
+        
+        alert('Wallet connected!')
       } catch (err) {
         console.log(err, 'connect Wallet')
       }
     } else {
-      /* MetaMask is not installed */
       console.log('Please install MetaMask')
     }
   }
