@@ -18,7 +18,7 @@
 }
 
 .wrapperimage {
-  background-image: url(https://adriancasino.vercel.app//public/bigcard.jpg);
+  background-image: url('../pages/bigcard.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2rem;
