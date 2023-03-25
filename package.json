@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.5",
     "ethers": "^5.7.2",
