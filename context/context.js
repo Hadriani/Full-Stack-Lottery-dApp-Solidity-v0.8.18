@@ -12,7 +12,6 @@ export const AppProvider = ({ children }) => {
   const [lastWinner, setLastWinner] = useState([])
   const [lotteryId, setLotteryId] = useState()
   const [etherscanUrl, setEtherscanUrl] = useState()
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     updateLottery()
