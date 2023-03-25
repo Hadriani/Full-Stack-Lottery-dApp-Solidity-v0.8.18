@@ -46,6 +46,7 @@
   font-family: 'Raleway', sans-serif;
   color: #fafafa;
   user-select: none;
+  text-shadow: 2px 2px 2px #474747;
 }
 
 .addressTitle {
@@ -54,6 +55,7 @@
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
   user-select: none;
+  text-shadow: 2px 2px 2px #474747;
 }
 
 .noPlayers {
@@ -65,4 +67,5 @@
   justify-content: center;
   padding: 30px;
   user-select: none;
+  text-shadow: 2px 2px 2px #474747;
 }

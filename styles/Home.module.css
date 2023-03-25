@@ -3,3 +3,50 @@
   background-repeat: no-repeat;
   padding-bottom: 30px;
 }
+
+.headblocks {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: .05em;
+  font-size: 20px;
+  user-select: none;
+}
+
+
+
+.about {
+  padding-right: 70px;
+  cursor: pointer;
+}
+
+.about:hover {
+  color: rgb(170, 167, 68);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.leaderboard {
+  padding-right: 70px;
+  cursor: pointer;
+}
+
+.leaderboard:hover {
+  color: rgb(170, 167, 68);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.us {
+  cursor: pointer;
+}
+
+.us:hover {
+  color: rgb(170, 167, 68);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.blank {
+  height: 100px;
+}

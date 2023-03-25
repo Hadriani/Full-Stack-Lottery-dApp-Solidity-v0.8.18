@@ -13,8 +13,30 @@
   border-bottom: 1px solid rgb(0, 0, 0);
 }
 
+.audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  color: #0078d0;
+  user-select: none;
+}
+
+.audio::-webkit-media-controls-panel {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #0078d0, #ffffff);
+  border-radius: 4px;
+  user-select: none;
+}
+
 .title {
   background-color: #0078d0;
+  text-shadow: 2px 2px 2px #6f6f6f;
     border: 0;
     border-radius: 56px;
     margin-right: 20px;
@@ -58,7 +80,7 @@
 
 .loginBtn:before {
   background-color: initial;
-  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient( rgba(255, 255, 255, 0) 100%);
   border-radius: 125px;
   content: "";
   height: 50%;
@@ -86,7 +108,7 @@
 }
 
 @media (min-width: 768px) {
-  .button-71 {
+  .loginBtn {
     padding: 16px 48px;
   }
 }
