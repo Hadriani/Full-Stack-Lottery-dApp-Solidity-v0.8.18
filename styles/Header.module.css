@@ -13,26 +13,6 @@
   border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.audio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 250px;
-  height: 20px;
-  margin: 10px 0;
-  border-radius: 4px;
-  color: #0078d0;
-  user-select: none;
-}
-
-.audio::-webkit-media-controls-panel {
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(to right, #0078d0, #ffffff);
-  border-radius: 4px;
-  user-select: none;
-}
 
 .title {
   background-color: #0078d0;
