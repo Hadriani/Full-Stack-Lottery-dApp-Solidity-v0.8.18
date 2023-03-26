@@ -20,7 +20,7 @@
 .wrapperimage {
   position: relative;
   align-items: center;
-  background-image: url("../public/6318627_3248448.jpg");
+  background: linear-gradient(to right, #9e9313, #77810d);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2rem;
