@@ -18,7 +18,9 @@
 }
 
 .wrapperimage {
-  background-image: url('../pages/bigcard.jpg');
+  position: relative;
+  align-items: center;
+  background-image: url('../public/bigcard.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2rem;
