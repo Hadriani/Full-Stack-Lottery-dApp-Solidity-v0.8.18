@@ -11,14 +11,15 @@ export default function About() {
     return (
         <div className={style.wrapper}>
             <Header />
-            <div>
-                <ul className={style.headblocks}>
-                    <il className={style.about}>
+            <div className={style.menucontainer}>
+                <div className={style.dropdown}>
+                    <button className={style.dropbtn}>Menu</button>
+                    <div className={style.dropdowncontent}>
+                        <Link href="/about">Instructions</Link>
                         <Link href="/">Home</Link>
-                    </il>
-                    <il className={style.leaderboard}>Leaderboard</il>
-                    <il className={style.us}>Contact Us</il>
-                </ul>
+                        <Link href="/">Contact Us</Link>
+                    </div>
+                </div>
             </div>
             <PotCardRules />
             <div className={style.blank}></div>
