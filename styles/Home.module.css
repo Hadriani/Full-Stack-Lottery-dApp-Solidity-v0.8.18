@@ -4,49 +4,52 @@
   padding-bottom: 30px;
 }
 
-.headblocks {
-  color: white;
+.menucontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: .05em;
-  font-size: 30px;
   user-select: none;
 }
 
-
-
-.about {
-  padding-right: 70px;
-  cursor: pointer;
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #d5de63;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.about:hover {
+.dropdowncontent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdowncontent a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
   color: rgb(170, 167, 68);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.leaderboard {
-  padding-right: 70px;
-  cursor: pointer;
-}
-
-.leaderboard:hover {
-  color: rgb(170, 167, 68);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.us {
-  cursor: pointer;
-}
-
-.us:hover {
-  color: rgb(170, 167, 68);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.blank {
-  height: 100px;
 }

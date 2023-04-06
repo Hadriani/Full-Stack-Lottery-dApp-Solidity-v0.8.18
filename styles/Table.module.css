@@ -1,7 +1,6 @@
 .wrapper {
   width: 80%;
-  max-width: 50%;
-
+  max-width: 90%;
   display: flex;
   margin-top: 50px;
   align-items: center;
@@ -68,4 +67,10 @@
   padding: 30px;
   user-select: none;
   text-shadow: 2px 2px 2px #474747;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 90%;
+  }
 }

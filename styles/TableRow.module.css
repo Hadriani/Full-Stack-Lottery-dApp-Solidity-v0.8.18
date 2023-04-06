@@ -33,3 +33,9 @@
 .goldAccent {
   color: #ffde3c;
 }
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 90%;
+  }
+}

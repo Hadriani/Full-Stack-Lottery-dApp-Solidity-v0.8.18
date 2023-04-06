@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  justify-content: space-between;
   position: relative;
   top: 0;
   left: 0;
@@ -16,18 +15,20 @@
 
 .title {
   background-color: #0078d0;
-  text-shadow: 2px 2px 2px #6f6f6f;
   border: 0;
   border-radius: 56px;
   margin-right: 20px;
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-weight: 600;
   outline: 0;
   padding: 16px 21px;
-  position: relative;
+  position: absolute;
+  right: 10px;
+  top: 10px;
   text-align: center;
   text-decoration: none;
   transition: all .3s;
@@ -87,11 +88,23 @@
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .title,
+  .loginBtn {
+    position: static;
+    margin-top: 10px;
+  }
+
   .loginBtn {
     padding: 16px 48px;
   }
 }
+
+
 
 
 

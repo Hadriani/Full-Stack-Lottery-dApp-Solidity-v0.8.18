@@ -304,3 +304,18 @@
   border-radius: 2rem;
   user-select: none;
 }
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 75%;
+  }
+
+  .btn {
+    margin-left: 35px;
+  }
+
+  .btn2 {
+    margin-left: 20px;
+  }
+
+}
